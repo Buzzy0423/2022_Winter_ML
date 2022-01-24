@@ -6,9 +6,9 @@ https://github.com/Buzzy0423/2022_Winter_ML
 
 ## LinearRegression
 
-基本公式$Y=W^TX+B$ , 损失函数$L=\frac{1}{2}(Y^`-Y)^2$ ,权重直接由损失函数求导得出
+基本公式$Y=W^TX+B$ , 损失函数$L=\frac{1}{2}(Y^`-Y)^T(Y^`-Y)$ ,权重直接由损失函数求导得出
 
-即$\frac{dL}{dW}=(W^TX-Y)X=0$（bias算作w0）, 推导出$W=(X^TX)^{-1}(X^TY)$
+即$\frac{dL}{dW}=-X^TY+X^TXW=0$（bias算作w0）, 推导出$W=(X^TX)^{-1}(X^TY)$
 
 整个过程无需训练
 
